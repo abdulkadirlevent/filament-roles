@@ -21,8 +21,8 @@ class UserSeeder extends Seeder
             'id' => 1,
             'name' => 'Abdulkadir LEVENT',
             'email' => 'abdulkadirlevent@hotmail.com',
-            'password' => Hash::make('Akll0571'),
-            'image' => 'images/users/1669070070_abdulkadir.jpg',
+            'password' => Hash::make('Batman7234'),
+            'image' => 'google.png',
             'email_verified_at' => now(),
             'remember_token' => Str::random(10),
         ]);
@@ -31,8 +31,8 @@ class UserSeeder extends Seeder
             'id' => 2,
             'name' => 'Abdulkadir Yahoo',
             'email' => 'abdulkadirlevent@yahoo.com',
-            'password' => Hash::make('Akll0571'),
-            'image' => 'images/users/1669070017_google.png',
+            'password' => Hash::make('Batman7234'),
+            'image' => 'google.png',
             'email_verified_at' => now(),
             'remember_token' => Str::random(10),
         ]);
@@ -40,8 +40,8 @@ class UserSeeder extends Seeder
             'id' => 3,
             'name' => 'Abdulkadir Gmail',
             'email' => 'abdulkadirlevent@gmail.com',
-            'password' => Hash::make('Akll0571'),
-            'image' => 'images/users/1669143401_proje13.jpg',
+            'password' => Hash::make('Batman7234'),
+            'image' => 'google.png',
             'email_verified_at' => now(),
             'remember_token' => Str::random(10),
         ]);
