@@ -1,16 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Filament Demo App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A demo application to illustrate how Filament Admin works.
 
-## About Laravel
+### Screenshots :star:
 
-## Developer code
-- rm -rf node_modules/
-- php artisan migrate:fresh --seed
-- php artisan db:seed --force
-- php artisan db:seed --class=UserSeeder
+<img src="resources/images/bg1.png" height="600em" />
+<img src="resources/images/bg1a.png" height="600em" />
+<img src="resources/images/bg2.png" height="600em" />
+<img src="resources/images/bg3.png" height="600em" />
+<img src="resources/images/bg4.png" height="600em" />
+
+## Installation
+
+Clone the repo locally:
+
+```sh
+git clone https://github.com/abdulkadirlevent/filament-roles.git filament-roles && cd filament-roles
+```
+
+Install PHP dependencies:
+
+```sh
+composer install
+```
+
+Setup configuration:
+
+```sh
+cp .env.example .env
+```
+
+Generate application key:
+
+```sh
+php artisan key:generate
+```
+
+Create an SQLite database. You can also use another database (MySQL, Postgres), simply update your configuration accordingly.
+
+```sh
+touch database/database.sqlite
+```
+
+Run database migrations:
+
+```sh
+php artisan migrate
+```
+
+Run database seeder:
+
+```sh
+php artisan db:seed
+```
+
+> **Note**  
+> If you get an "Invalid datetime format (1292)" error, this is probably related to the timezone setting of your database.  
+> Please see https://dba.stackexchange.com/questions/234270/incorrect-datetime-value-mysql
+
+Create a symlink to the storage:
+
+```sh
+php artisan storage:link
+```
+
+Run the dev server (the output will give the address):
+
+```sh
+php artisan serve
+```
+
+You're ready to go! Visit the url in your browser, and login with:
+
+-   **Username:** admin@filamentphp.com
+-   **Password:** password
+
+## Features to explore
+
+### Relations
+
+#### BelongsTo
+- PostResource
+
+#### MorphMany
+- PostResource\RelationManagers\CommentsRelationManager
+
